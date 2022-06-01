@@ -38,6 +38,6 @@ app.get('/api/:skaterName', (request, response) => {
     // response.json(skatersObject)
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`the server is running on port ${PORT}! You better go catch it.`)
 })
